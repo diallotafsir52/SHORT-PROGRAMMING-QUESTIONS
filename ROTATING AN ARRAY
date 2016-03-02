@@ -1,0 +1,39 @@
+#+----------------------------------------------------------------------------+
+#| Programming Question 4: Rotating an Array in JAVA
+#| Write a function that takes an array of integers and returns that array 
+#| rotated by N positions. For example, if N=2, given the input array 
+#| [1, 2, 3, 4, 5, 6] the function should return [5, 6, 1, 2, 3, 4]
+#+----------------------------------------------------------------------------+
+
+public class TabRotate {
+
+    public static void main(String[] args) {
+
+        int tab1[] = { 1, 2, 3, 4, 5, 6 };
+        int tab2[] = new int[tab1.length];
+        
+        //Input number
+        int N = 2;
+        
+        int outPutNvalue = N;
+
+        for (int i = 0; i < tab1.length; i++) {
+            int value = tab1.length - N;
+            if (N != 0) {
+                tab2[i] = tab1[value];
+                N--;
+            } else {
+                tab2[i] = tab1[i - outPutNvalue];
+            }
+            
+        }
+
+        for (int i = 0; i < tab2.length; i++) {
+            int j = tab2[i];
+            System.out.print(j+" ");
+            
+        }
+
+    }
+
+}
