@@ -1,0 +1,19 @@
+#+----------------------------------------------------------------------------+
+#| Programming Question 2:
+#| Write a function that takes as input a sorted array and modifies the array 
+#| to compact it, removing duplicates. 
+#| Notes: The input array might be very large.
+#| For example:
+#|    input array = [1, 3, 7, 7, 8, 9, 9, 9, 10]
+#|    transformed array = [1, 3, 7, 8, 9, 10]
+#+----------------------------------------------------------------------------+
+def compact(array):
+    prev = array[0]
+    
+    i = 1
+    while (i < len(array)):
+        if prev == array[i]:
+            del array[i]
+        else:
+            prev = array[i]
+            i += 1
