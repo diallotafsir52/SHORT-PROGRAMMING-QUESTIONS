@@ -1,6 +1,7 @@
 # SHORT-PROGRAMMING-QUESTIONS
 Please submit by pushing to a new github repository and sending the link
-DEPTH FIRST TREE TRAVERSAL
+
+#DEPTH FIRST TREE TRAVERSAL
 Discuss an algorithm to traverse a tree, depth first.
 
 #CHARACTERS IN STRINGS
