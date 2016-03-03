@@ -1,6 +1,5 @@
 #+----------------------------------------------------------------------------+
-#| Programming Question 2:
-#| Write a function that takes as input a sorted array and modifies the array 
+#|#| Write a function that takes as input a sorted array and modifies the array 
 #| to compact it, removing duplicates. 
 #| Notes: The input array might be very large.
 #| For example:
