@@ -1,0 +1,35 @@
+#+----------------------------------------------------------------------------+
+#|Least Common Multiple in JAVA
+#| The least common multiple of a set of integers is the smallest positive 
+#| integer that is a multiple of all of the integers in the set.Write a 
+#| function that takes an array of integers and efficiently calculates and 
+#| returns the LCM.
+#+----------------------------------------------------------------------------+
+
+
+
+
+import java.util.Scanner;
+ 
+public class LCM{
+   public static void main(String[] args){
+      Scanner aScanner = new Scanner(System.in);
+ 
+      //prompts user for values to find the LCM for, then saves them to m and n
+      System.out.print("Enter int1:");
+      int int1 = aScanner.nextInt();
+      System.out.print("Enter int2:");
+      int int2 = aScanner.nextInt();
+      int lcm = (int1 == int2 || int2 == 1) ? int1 :(int1 == 1 ? int2 : 0);
+      
+      if (lcm == 0) {
+         int int3 = int1, int4 = int1;
+         while (int3 != int4) {
+             while (int3 < int4) { int3 += int1; }
+             while (int4 < int3) { int4 += int2; }
+         }  
+         lcm = int3;
+      }
+      System.out.println("lcm(" + int1 + ", " + int2 + ") = " + lcm);
+   }
+}
