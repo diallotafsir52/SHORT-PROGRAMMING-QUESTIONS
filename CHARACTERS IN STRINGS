@@ -1,5 +1,4 @@
 #+----------------------------------------------------------------------------+
-#| Programming Question 2:
 #| Implement a function with signature find_chars(string1, string2) that takes 
 #| two strings and returns a string that contains only the characters found in 
 #| string1 and string two in the order that they are found in string1. Implement
